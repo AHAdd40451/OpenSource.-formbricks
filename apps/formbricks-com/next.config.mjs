@@ -151,6 +151,4 @@ const nextConfig = {
   },
 };
 
-export default withPlausibleProxy({ customDomain: "https://plausible.formbricks.com" })(
-  withSearch(withMDX(nextConfig))
-);
+export default withPlausibleProxy({ customDomain: "https://plausible.formbricks.com" })
