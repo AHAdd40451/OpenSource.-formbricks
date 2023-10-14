@@ -23,9 +23,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "build": "tsc && gulp build:icons",
+    "build": "node init && tsc && gulp build:icons",
     "clean": "rimraf .turbo node_modules dist",
-    "dev": "tsc --watch",
+    "dev": "node init && tsc --watch",
     "format": "prettier nodes credentials --write",
     "lint": "eslint nodes credentials package.json",
     "lintfix": "eslint nodes credentials package.json --fix",
